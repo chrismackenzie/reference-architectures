@@ -22,7 +22,7 @@
       "name": "azure-AZAE-vnet-deployment",
       "type": "Microsoft.Resources/deployments",
       "properties": {
-        "mode": "incremental",
+        "mode": "complete",
         "templateLink": {
           "uri": "[variables('buildingBlocks').virtualNetworkTemplate]",
           "contentVersion": "1.0.0.0"
@@ -38,7 +38,7 @@
       "name": "nsg-deployment",
       "type": "Microsoft.Resources/deployments",
       "properties": {
-        "mode": "incremental",
+        "mode": "complete",
         "templateLink": {
           "uri": "[variables('buildingBlocks').nsgTemplate]",
           "contentVersion": "1.0.0.0"
