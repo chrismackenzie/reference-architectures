@@ -37,6 +37,9 @@
       "apiVersion": "2015-01-01",
       "name": "nsg-deployment",
       "type": "Microsoft.Resources/deployments",
+      "dependsOn": [
+        "azure-AZAE-vnet-deployment"
+      ],
       "properties": {
         "mode": "incremental",
         "templateLink": {
