@@ -7,7 +7,7 @@
         "description": "VNet name"
       },
       "value": {
-        "name": "azure-mgmt-vnet"
+        "name": "VNet-AZAE-P-172.30.64.0-19"
       }
     },
     "networkSecurityGroupsSettings": {
@@ -16,11 +16,11 @@
       },
       "value": [
         {
-          "name": "mgmt-subnet-nsg",
+          "name": "NSG-SN-P-IDENTITY-172.30.65.0-24",
           "subnets": [
-            "mgmt-subnet"
+            "SN-P-IDENTITY-172.30.65.0-24"
           ],
-          "networkInterfaces": [ ],
+          "networkInterfaces": [],
           "securityRules": [
             {
               "name": "RDPAllow",

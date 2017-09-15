@@ -1,0 +1,84 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualNetworkSettings": {
+      "metadata": {
+        "description": "Settings for AZAE Vnet"
+      },
+      "value": {
+        "name": "VNet-AZAE-P-172.30.64.0-19",
+        "addressPrefixes": [
+          "172.30.64.0/19",
+          "10.30.64.0/19"
+        ],
+        "subnets": [
+          {
+            "name": "SN-P-NGFW-172.30.94.224-27",
+            "addressPrefix": "172.30.94.224/27"
+          },
+          {
+            "name": "SN-P-DMZ-10.30.91.0-24",
+            "addressPrefix": "10.30.91.0/24"
+          },
+          {
+            "name": "SN-P-DMZ-10.30.92.0-24",
+            "addressPrefix": "10.30.92.0/24"
+          },
+          {
+            "name": "SN-P-IDENTITY-172.30.65.0-24",
+            "addressPrefix": "172.30.65.0/24"
+          },
+          {
+            "name": "SN-P-INFRA-172.30.66.0-24",
+            "addressPrefix": "172.30.66.0/24"
+          },
+          {
+            "name": "SN-P-APP-172.30.67.0-24",
+            "addressPrefix": "172.30.67.0/24"
+          },
+          {
+            "name": "SN-P-DB-172.30.68.0-24",
+            "addressPrefix": "172.30.68.0/24"
+          },
+          {
+            "name": "SN-P-WEB-172.30.69.0-24",
+            "addressPrefix": "172.30.69.0/24"
+          },
+          {
+            "name": "SN-P-VDI-172.30.70.0-24",
+            "addressPrefix": "172.30.70.0/24"
+          },
+          {
+            "name": "SN-P-MULESOFT-172.30.71.0-24",
+            "addressPrefix": "172.30.71.0/24"
+          },
+          {
+            "name": "SN-P-JDE-172.30.72.0-24",
+            "addressPrefix": "172.30.72.0/24"
+          },
+          {
+            "name": "mSN-P-NWAPPLIANCE-172.30.73.0-25",
+            "addressPrefix": "172.30.73.0/25"
+          },
+          {
+            "name": "SN-P-JMPBOX-172.30.73.128-25",
+            "addressPrefix": "172.30.73.128/25"
+          },
+          {
+            "name": "SN-P-MGMT-172.30.94.0-27",
+            "addressPrefix": "172.30.94.0/27"
+          },
+          {
+            "name": "GatewaySubnet",
+            "addressPrefix": "172.30.95.0/28"
+          }
+        ],
+        "dnsServers": [
+          "10.0.4.4",
+          "10.0.4.5"
+        ]
+      }
+    }
+  }
+}
